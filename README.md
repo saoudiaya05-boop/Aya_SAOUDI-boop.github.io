@@ -1,6 +1,6 @@
 # Aya_SAOUDI-boop.github.io
 # My personal portfolio
-<!DOCTYPE html>
+# <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -115,42 +115,27 @@
       }
 
       /* PROFILE IMAGE */
-      .profile-wrapper {
-        width: 180px;
-        height: 180px;
-        margin: 0 auto 25px;
-        position: relative;
-      }
-      .profile-wrapper::before {
-        content: "";
-        position: absolute;
-        inset: -6px;
-        border-radius: 50%;
-        background: linear-gradient(45deg, var(--primary), var(--secondary));
-        animation: spin 4s linear infinite;
-      }
-      .profile-img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        overflow: hidden;
-        position: relative;
-        background: #fff;
-      }
-      .profile-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+     .profile-wrapper {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-      @keyframes spin {
-        from {
-          transform: rotate(0);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
+.profile-wrapper i {
+  font-size: 120px;
+  color: var(--secondary);
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 
       /* SOCIAL */
       .social-icons a {
@@ -285,31 +270,29 @@
       </nav>
     </header>
 
-    <!-- HOME -->
-    <section id="home">
-      <div class="bg-icons">
-        <i class="fas fa-code"></i>
-        <i class="fas fa-shield-halved"></i>
-        <i class="fas fa-laptop-code"></i>
-      </div>
+   <!-- HOME -->
+<section id="home">
+  <div class="bg-icons">
+    <i class="fas fa-code"></i>
+    <i class="fas fa-shield-halved"></i>
+    <i class="fas fa-laptop-code"></i>
+  </div>
 
-      <div class="home-content">
-        <div class="profile-wrapper">
-          <div class="profile-img">
-            <img src="https://i.imgur.com/1X8b6qM.png" alt="Aya" />
-          </div>
-        </div>
+  <div class="home-content">
+    <div class="profile-wrapper">
+      <i class="fas fa-user-shield"></i>
+    </div>
 
-        <h1>Aya Saoudi</h1>
-        <p><span id="typing"></span></p>
+    <h1>Aya Saoudi</h1>
+    <p><span id="typing"></span></p>
 
-        <div class="social-icons">
-          <a href="mailto:aya@email.com"><i class="fas fa-envelope"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-    </section>
+    <div class="social-icons">
+      <a href="mailto:aya@email.com"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
 
     <!-- ABOUT -->
     <section id="about">
