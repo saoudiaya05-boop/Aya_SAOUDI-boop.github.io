@@ -1,6 +1,5 @@
 # Aya_SAOUDI-boop.github.io
 # My personal portfolio
-# <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
